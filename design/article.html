@@ -33,7 +33,7 @@
           felt slightly bare and uninviting. I’ve got some simple tips to help
           you make any room feel complete.
         </p>
-        <div class="container_three">
+        <div class="container_three" id="container_three">
           <div class="michelle_img_container">
             <div class="michelle_img"></div>
             <div class="name_date">
@@ -42,8 +42,36 @@
             </div>
           </div>
 
-          <div class="share_icon" id="share_icon">
-            <img class="share_img" src="../images/icon-share.svg" alt="" />
+          <div class="share_icon" onclick="onTooltipClick()">
+            <div class="tooltip" id="tooltip">
+              <p class="share_text">Share</p>
+              <div class="icons">
+                <img src="../images/icon-facebook.svg" />
+                <img src="../images/icon-twitter.svg" />
+                <img src="../images/icon-pinterest.svg" />
+              </div>
+              <div class="triangle"></div>
+            </div>
+            <img class="share_img" src="../images/icon-share.svg" />
+          </div>
+          <div class="share_icon_mobile" id="share_icon_mobile" onclick="onTooltipMobileClick('show')">
+            <img class="share_img_mobile" src="../images/icon-share-gray.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="share_icon_mobile_container" id="share_icon_mobile_container">
+        <div class="tooltip_mobile" >
+          <div class="icons_mobile_container">
+            <p class="share_text_mobile">Share</p>
+            <div class="icons_mobile">
+              <img src="../images/icon-facebook.svg" />
+              <img src="../images/icon-twitter.svg" />
+              <img src="../images/icon-pinterest.svg" />
+            </div>
+          </div>
+
+          <div class="icon_mobile_2" onclick="onTooltipMobileClick('hide')">
+            <img class="share_img_mobile_2" src="../images/icon-share.svg" />
           </div>
         </div>
       </div>
@@ -51,10 +79,11 @@
 
     <div class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      <a href="https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT" target="_blank"
         >Frontend Mentor</a
       >
-      Coded by <a href="#">Andrés Londoño</a>
+      Coded by <a href="https://github.com/andreslondono00/article-preview-component" target="_blank">Andrés Londoño</a>
     </div>
+    <script type="text/javascript" src="./js/article.js"></script>
   </body>
 </html>
