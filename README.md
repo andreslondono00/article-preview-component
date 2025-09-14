@@ -42,7 +42,7 @@ Mobile
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
+- JavaScript
 
 ### What I learned
 
